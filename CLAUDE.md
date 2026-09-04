@@ -3,7 +3,7 @@
 Contexto para Claude Code. Lee este archivo completo antes de tocar nada.
 
 ## Qué es
-Board grupal de **PG Arquitectos (técnico) · Aurum Arquitectos (diseño) · YoDesarrollo (desarrollo)**. Una sola pantalla: hero "¿dónde estamos?" (avance / el cuello / ritmo / dinero) + Gantt de **trámites** agrupado por etapa, con flechas de dependencia, línea HOY y ficha lateral por trámite (`index.html:339` `pintar()`, `index.html:416` `pintarGantt()`).
+Board grupal de **PG Arquitectos (técnico) · Aurum Arquitectos (diseño) · YoDesarrollo (desarrollo)**. Una sola pantalla: hero "¿dónde estamos?" (avance / el cuello / ritmo / dinero) + Gantt de **trámites** agrupado por etapa, con flechas de dependencia, línea HOY y ficha lateral por trámite (`index.html:340` `pintar()`, `index.html:417` `pintarGantt()`).
 
 - **Solo trámites, estudios y entregables.** Las tareas viven en el board de tareas de YoDesarrollo/Aurum (dicho en el pie del propio board, `index.html:138`).
 - **Quién lo usa:** los responsables de cada proyecto del grupo. Entra con la clave única del Sheet Registro o con liga mágica del Portero.
@@ -79,7 +79,7 @@ Sheet "Alquimia Urbana - Registro"  (id 1peT5oM17danrCkbO5_Zzw5fNogh7cenMJ3KfiEO
 | Tema | Dueño | Qué evidencia lo cierra |
 |---|---|---|
 | Pegar la carpeta de Drive existente de Miramar en su fila de PROYECTOS | Alejandro | `carpeta_drive_url` lleno en la fila y el link "carpeta Drive" visible en el hero |
-| Llenar Dunas Kino, La Cercada y Casa Alysa (hoy sin Sheet Maestro → salen con el cartel "aún no tiene Sheet Maestro conectado", `index.html:373`) | responsables de cada proyecto | los 3 chips con Gantt propio, no el cartel |
+| Llenar Dunas Kino, La Cercada y Casa Alysa (hoy sin Sheet Maestro → salen con el cartel "aún no tiene Sheet Maestro conectado", `index.html:374`) | responsables de cada proyecto | los 3 chips con Gantt propio, no el cartel |
 | Aplicar (o descartar) el skin YoD aprobado del dummy | Alejandro | captura del board real con el header marino, o un "ya no" por escrito |
 | Fase F2: plantilla de Maestro generalizada, board genérico `?p=`, entregables a Drive desde la ficha | Alejandro (luz verde) | su OK explícito; hoy están congelados |
 | Decidir "opción B": unificar a una sola clave (hoy hay Sheet de claves aparte `1jZOsov…`) | Alejandro | una sola clave viva y el Sheet de claves archivado |
