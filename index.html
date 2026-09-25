@@ -2,6 +2,7 @@
 <html lang="es">
 <head>
 <meta charset="utf-8">
+<script src="https://yodesarrollomx.github.io/yod-portal/os/proyectos.js?v=2"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
 <title>Alquimia Urbana · board del grupo</title>
@@ -346,7 +347,7 @@ function pintar(){
   proys.forEach(function(p,i){
     var cl=p.live?(p.live.urgentes>0?"rojo":"amar"):"";
     if(p.live&&p.live.etapa==="Completado")cl="verde";
-    h+='<div class="pchip '+cl+(i===SEL_P?" on":"")+'" data-p="'+i+'"><span class="dot"></span>'+esc(p.nombre)+
+    h+='<div class="pchip '+cl+(i===SEL_P?" on":"")+'" data-p="'+i+'"'+(function(){var f=window.YodProyectos&&(YodProyectos.buscar(p.nombre)||YodProyectos.buscar(p.id||""));return f?' title="Folio '+esc(f.folio)+'"':' title="Sin folio en el registro YOD OS"';})()+'><span class="dot"></span>'+esc(p.nombre)+(function(){var f=window.YodProyectos&&(YodProyectos.buscar(p.nombre)||YodProyectos.buscar(p.id||""));return f?'<span class="et" style="font-weight:700">'+esc(f.folio.replace(/^PRJ-/,""))+'</span>':"";})()+
        '<span class="et">'+esc(p.live?p.live.etapa:(p.etapa||"—"))+'</span></div>';
   });
   h+='</div>';
